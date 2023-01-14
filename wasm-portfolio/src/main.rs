@@ -1,15 +1,7 @@
 use yew::prelude::*;
 
 mod components;
-use components::{
-    work_experience, 
-    education, 
-    skills, 
-    certifications, 
-    projects, 
-    contact
-};
-
+mod data;
 
 #[function_component(App)]
 fn app() -> Html {
@@ -36,7 +28,7 @@ fn main() {
     let certifications = data::read_certifications("certifications.json");
     let projects = data::read_projects("projects.json");
     let contact = data::read_contact("contact.json");
-    yew::start_app_with_props::<App>(App {
+    yew::start_app::<App>(App {
         work_experiences,
         education,
         skills,
