@@ -23,7 +23,7 @@ This is my portfolio written in Rust and WASM.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to us at work@tarungunaseelan.com
 
 
 ## Authors
