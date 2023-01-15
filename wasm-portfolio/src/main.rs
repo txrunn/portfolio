@@ -28,12 +28,5 @@ fn main() {
     let certifications = data::read_certifications("certifications.json");
     let projects = data::read_projects("projects.json");
     let contact = data::read_contact("contact.json");
-    yew::start_app::<App>(App {
-        work_experiences,
-        education,
-        skills,
-        certifications,
-        projects,
-        contact,
-    });
+    yew::start_app::<App>(App);
 }
