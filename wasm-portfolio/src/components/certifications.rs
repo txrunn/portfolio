@@ -1,6 +1,9 @@
 use yew::prelude::*;
+use serde::{Serialize, Deserialize};
 
-#[derive(Clone, Properties)]
+// Create a struct for the certification component
+// Certifications will be a vector of Certifications read from a json file
+#[derive(Clone, Properties, Serialize, Deserialize)]
 pub struct Certifications {
     pub title: String,
     pub description: String,

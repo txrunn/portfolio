@@ -1,6 +1,9 @@
 use yew::prelude::*;
+use serde::{Serialize, Deserialize};
 
-#[derive(Clone, Properties)]
+// Create a struct for the projects component
+// Projects will be a vector of Projects read from a json file
+#[derive(Clone, Properties, Serialize, Deserialize)]
 pub struct Projects {
     pub title: String,
     pub description: String,

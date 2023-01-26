@@ -1,6 +1,9 @@
 use yew::prelude::*;
+use serde::{Serialize, Deserialize};
 
-#[derive(Clone, Properties)]
+// Create a struct for the contact component
+// Contact will be read from a json file
+#[derive(Clone, Properties, Serialize, Deserialize)]
 pub struct Contact {
     pub email: String,
     pub phone: String,
