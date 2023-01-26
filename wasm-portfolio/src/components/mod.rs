@@ -1,4 +1,4 @@
-mod components {
+pub mod components {
     pub mod work_experience;
     pub mod education;
     pub mod skills;
